@@ -1,0 +1,94 @@
+{
+	"info": {
+		"_postman_id": "caed5db2-c9f4-4b33-854c-1b9d9d3412e3",
+		"name": "tpbank",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26768770"
+	},
+	"item": [
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"username\": \"09661606\",\n  \"password\": \"Nudaotac1\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "bank-accounts",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"accessToken\": \"eyJraWQiOiJNYmV1VmVVWlhVT2FJcDgwYmx1XC9sanFOQjNKZE9aSDgxQ3JGU0tpMmVcL2M9IiwiY3R5IjoiSldUIiwiZW5jIjoiQTEyOENCQy1IUzI1NiIsImFsZyI6ImRpciJ9..vPQwQ_wLu3qRt1_fZwI0Rw.CzXxS9_48XjEAK5YRDv4S3TY3Euq04zR7OxR9RlkK_NPpvDuQvAqGYUo4dHz0_QVOlEeMfKgl2LD8VPbID3Ob4R5tKQF-m_qSaa2HaLoSruIcdTgQR8dfV2xA1s7tWvQdMl8hmlNQXM2lo50gK-MYQNdVEEeikKPS8zdleJ5oAiTIG7u_AbAfKtB7lOgxVv1A1jmht0Eg2eaNg1ViS86Pfj7k7Gad3f-xYxkYnz6YBGzAWP-JqAKTEsV3RHH1kEt_IOU75iNfc4MfMkQLE8R51MT4IVmETmKjvzXMC3gdWaKvA6YxiExZ4_iPSoVCbYojF6KK9uh0KRlU_CzLEa89qbzvO50f9YngbPpMT4H10ZlotWs2vBJGVkkRfyR8_WQB_u58EdgVOyCTzoOWiqGj2LGkHcLHFNEk6ik5WHVb1TCk4AGGXkB_Id1oKZv69ABfK8CiagVG5k3b6fBftK-cRGs4iMEoxsytVG-OqRwoF23j39Sz3sEpJnhH5cEOW0CbE8nMla8wsIVeGeBnCvnncp9nyl89RmRGWMVPPPe6xw.sZ3I7Iyyf7H0yUrpzLJaoA\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/bank-account",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"bank-account"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "histories",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"accessToken\": \"eyJraWQiOiJNYmV1VmVVWlhVT2FJcDgwYmx1XC9sanFOQjNKZE9aSDgxQ3JGU0tpMmVcL2M9IiwiY3R5IjoiSldUIiwiZW5jIjoiQTEyOENCQy1IUzI1NiIsImFsZyI6ImRpciJ9..vPQwQ_wLu3qRt1_fZwI0Rw.CzXxS9_48XjEAK5YRDv4S3TY3Euq04zR7OxR9RlkK_NPpvDuQvAqGYUo4dHz0_QVOlEeMfKgl2LD8VPbID3Ob4R5tKQF-m_qSaa2HaLoSruIcdTgQR8dfV2xA1s7tWvQdMl8hmlNQXM2lo50gK-MYQNdVEEeikKPS8zdleJ5oAiTIG7u_AbAfKtB7lOgxVv1A1jmht0Eg2eaNg1ViS86Pfj7k7Gad3f-xYxkYnz6YBGzAWP-JqAKTEsV3RHH1kEt_IOU75iNfc4MfMkQLE8R51MT4IVmETmKjvzXMC3gdWaKvA6YxiExZ4_iPSoVCbYojF6KK9uh0KRlU_CzLEa89qbzvO50f9YngbPpMT4H10ZlotWs2vBJGVkkRfyR8_WQB_u58EdgVOyCTzoOWiqGj2LGkHcLHFNEk6ik5WHVb1TCk4AGGXkB_Id1oKZv69ABfK8CiagVG5k3b6fBftK-cRGs4iMEoxsytVG-OqRwoF23j39Sz3sEpJnhH5cEOW0CbE8nMla8wsIVeGeBnCvnncp9nyl89RmRGWMVPPPe6xw.sZ3I7Iyyf7H0yUrpzLJaoA\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/histories",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"histories"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
